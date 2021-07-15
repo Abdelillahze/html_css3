@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('images/bg-intro-desktop.png');
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.container {
+    padding: 50px 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container .col-1 {
+    width: 55%
+}
+
+.container .col-2 {
+    width: 45%;
+}
+
+.container .col-1 h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 50px;
+}
+
+.container .col-1 p {
+    font-size: 16px;
+    width: 85%;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .container .col-1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .container .col-1 p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container .col-2 {
+        width: 100%;
+    }
+}
+
+.container .col-2 .msg {
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    color: #d8d8d8;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 0px hsl(0deg 100% 69%);
+}
+
+.container .col-2 .msg span {
+    font-weight: 500;
+    color: white;
+}
+
+.container .col-2 .card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px hsl(0deg 100% 69%);
+}
+
+.container .col-2 .card input,
+.container .col-2 .card button {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #777;
+    outline: none;
+    padding-left: 25px;
+}
+
+.container .col-2 .card [type="submit"] {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset 0px -5px 0px 0px hsl(154deg 59% 40%);
+}
+
+.container .col-2 .card input:focus {
+    border-color:hsl(248, 32%, 49%);
+}
+
+.container .col-2 .card p {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    color: #555;
+}
+
+.container .col-2 .card p span {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
